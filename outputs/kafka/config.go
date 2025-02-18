@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/IBM/sarama"
+	"github.com/Shopify/sarama"
 
 	"github.com/njcx/libbeat_v7/common"
 	"github.com/njcx/libbeat_v7/common/cfgwarn"

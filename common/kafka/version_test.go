@@ -20,7 +20,7 @@ package kafka
 import (
 	"testing"
 
-	"github.com/IBM/sarama"
+	"github.com/Shopify/sarama"
 )
 
 func TestVersionGet(t *testing.T) {
