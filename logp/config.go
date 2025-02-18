@@ -20,7 +20,7 @@ package logp
 import (
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common/file"
+	"github.com/njcx/libbeat_v7/common/file"
 )
 
 // Config contains the configuration options for the logger. To create a Config

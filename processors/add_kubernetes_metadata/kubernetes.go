@@ -28,12 +28,12 @@ import (
 
 	k8sclient "k8s.io/client-go/kubernetes"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/kubernetes"
-	"github.com/elastic/beats/v7/libbeat/common/kubernetes/metadata"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/processors"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/kubernetes"
+	"github.com/njcx/libbeat_v7/common/kubernetes/metadata"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/processors"
 )
 
 const (

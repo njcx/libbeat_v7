@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common/transport/httpcommon"
-	"github.com/elastic/beats/v7/libbeat/monitoring/report"
+	"github.com/njcx/libbeat_v7/common/transport/httpcommon"
+	"github.com/njcx/libbeat_v7/monitoring/report"
 )
 
 // config is subset of libbeat/outputs/elasticsearch config tailored

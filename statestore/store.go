@@ -18,7 +18,7 @@
 package statestore
 
 import (
-	"github.com/elastic/beats/v7/libbeat/statestore/backend"
+	"github.com/njcx/libbeat_v7/statestore/backend"
 	"github.com/elastic/go-concert/atomic"
 	"github.com/elastic/go-concert/unison"
 )

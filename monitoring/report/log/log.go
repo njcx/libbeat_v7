@@ -22,11 +22,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/monitoring"
-	"github.com/elastic/beats/v7/libbeat/monitoring/report"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/monitoring"
+	"github.com/njcx/libbeat_v7/monitoring/report"
 )
 
 // List of metrics that are gauges. This is used to identify metrics that should

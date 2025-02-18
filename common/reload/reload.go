@@ -22,7 +22,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/njcx/libbeat_v7/common"
 )
 
 // Register holds a registry of reloadable objects

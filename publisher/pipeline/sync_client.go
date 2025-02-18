@@ -20,10 +20,10 @@ package pipeline
 import (
 	"sync"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common/acker"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/publisher/pipetool"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/common/acker"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/publisher/pipetool"
 )
 
 // Client implements the interface used by all the functionbeat function, we only implement a synchronous

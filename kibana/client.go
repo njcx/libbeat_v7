@@ -35,10 +35,10 @@ import (
 
 	"github.com/joeshaw/multierror"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/transport/httpcommon"
-	"github.com/elastic/beats/v7/libbeat/common/useragent"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/transport/httpcommon"
+	"github.com/njcx/libbeat_v7/common/useragent"
+	"github.com/njcx/libbeat_v7/logp"
 )
 
 var (

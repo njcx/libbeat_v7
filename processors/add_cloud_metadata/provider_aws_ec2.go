@@ -24,11 +24,11 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	s "github.com/elastic/beats/v7/libbeat/common/schema"
-	c "github.com/elastic/beats/v7/libbeat/common/schema/mapstriface"
-	"github.com/elastic/beats/v7/libbeat/common/transport/tlscommon"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/njcx/libbeat_v7/common"
+	s "github.com/njcx/libbeat_v7/common/schema"
+	c "github.com/njcx/libbeat_v7/common/schema/mapstriface"
+	"github.com/njcx/libbeat_v7/common/transport/tlscommon"
+	"github.com/njcx/libbeat_v7/logp"
 )
 
 const (

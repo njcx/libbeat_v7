@@ -24,12 +24,12 @@ import (
 
 	"github.com/dustin/go-humanize"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/cfgtype"
-	"github.com/elastic/beats/v7/libbeat/reader"
-	"github.com/elastic/beats/v7/libbeat/reader/multiline"
-	"github.com/elastic/beats/v7/libbeat/reader/readfile"
-	"github.com/elastic/beats/v7/libbeat/reader/readjson"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/cfgtype"
+	"github.com/njcx/libbeat_v7/reader"
+	"github.com/njcx/libbeat_v7/reader/multiline"
+	"github.com/njcx/libbeat_v7/reader/readfile"
+	"github.com/njcx/libbeat_v7/reader/readjson"
 )
 
 var (

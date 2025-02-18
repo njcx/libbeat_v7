@@ -31,7 +31,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/context"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/njcx/libbeat_v7/logp"
 )
 
 type MockClient struct {

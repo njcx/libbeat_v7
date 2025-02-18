@@ -20,9 +20,9 @@ package template
 import (
 	"fmt"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/cfgwarn"
-	"github.com/elastic/beats/v7/libbeat/mapping"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/cfgwarn"
+	"github.com/njcx/libbeat_v7/mapping"
 )
 
 const (

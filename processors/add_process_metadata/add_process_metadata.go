@@ -25,13 +25,13 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/atomic"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/metric/system/cgroup"
-	"github.com/elastic/beats/v7/libbeat/processors"
-	jsprocessor "github.com/elastic/beats/v7/libbeat/processors/script/javascript/module/processor"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/atomic"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/metric/system/cgroup"
+	"github.com/njcx/libbeat_v7/processors"
+	jsprocessor "github.com/njcx/libbeat_v7/processors/script/javascript/module/processor"
 )
 
 const (

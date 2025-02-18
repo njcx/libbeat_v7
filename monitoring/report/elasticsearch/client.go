@@ -28,13 +28,13 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/beat/events"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/esleg/eslegclient"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/monitoring/report"
-	"github.com/elastic/beats/v7/libbeat/publisher"
-	"github.com/elastic/beats/v7/libbeat/testing"
+	"github.com/njcx/libbeat_v7/beat/events"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/esleg/eslegclient"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/monitoring/report"
+	"github.com/njcx/libbeat_v7/publisher"
+	"github.com/njcx/libbeat_v7/testing"
 )
 
 var createDocPrivAvailableESVersion = common.MustNewVersion("7.5.0")

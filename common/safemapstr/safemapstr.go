@@ -20,7 +20,7 @@ package safemapstr
 import (
 	"strings"
 
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/njcx/libbeat_v7/common"
 )
 
 const alternativeKey = "value"

@@ -26,8 +26,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/version"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/version"
 )
 
 type testTemplate struct {

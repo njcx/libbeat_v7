@@ -18,12 +18,12 @@
 package elasticsearch
 
 import (
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/esleg/eslegclient"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/outputs"
-	"github.com/elastic/beats/v7/libbeat/outputs/outil"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/esleg/eslegclient"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/outputs"
+	"github.com/njcx/libbeat_v7/outputs/outil"
 )
 
 func init() {

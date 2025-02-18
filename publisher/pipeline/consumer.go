@@ -21,9 +21,9 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/elastic/beats/v7/libbeat/common/atomic"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/publisher/queue"
+	"github.com/njcx/libbeat_v7/common/atomic"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/publisher/queue"
 )
 
 // eventConsumer collects and forwards events from the queue to the outputs work queue.

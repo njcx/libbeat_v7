@@ -23,14 +23,14 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/autodiscover/meta"
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/cfgfile"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/bus"
-	"github.com/elastic/beats/v7/libbeat/common/reload"
-	"github.com/elastic/beats/v7/libbeat/keystore"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/njcx/libbeat_v7/autodiscover/meta"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/cfgfile"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/bus"
+	"github.com/njcx/libbeat_v7/common/reload"
+	"github.com/njcx/libbeat_v7/keystore"
+	"github.com/njcx/libbeat_v7/logp"
 )
 
 const (

@@ -28,7 +28,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/njcx/libbeat_v7/logp"
 )
 
 // diskQueueSegments encapsulates segment-related queue metadata.

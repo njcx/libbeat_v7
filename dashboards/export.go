@@ -32,8 +32,8 @@ import (
 	"github.com/pkg/errors"
 	"gopkg.in/yaml.v2"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/kibana"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/kibana"
 )
 
 const (

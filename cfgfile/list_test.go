@@ -23,10 +23,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/reload"
-	pubtest "github.com/elastic/beats/v7/libbeat/publisher/testing"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/reload"
+	pubtest "github.com/njcx/libbeat_v7/publisher/testing"
 )
 
 type runner struct {

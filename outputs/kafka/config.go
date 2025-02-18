@@ -27,16 +27,16 @@ import (
 
 	"github.com/IBM/sarama"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/cfgwarn"
-	"github.com/elastic/beats/v7/libbeat/common/fmtstr"
-	"github.com/elastic/beats/v7/libbeat/common/kafka"
-	"github.com/elastic/beats/v7/libbeat/common/transport/kerberos"
-	"github.com/elastic/beats/v7/libbeat/common/transport/tlscommon"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/monitoring"
-	"github.com/elastic/beats/v7/libbeat/monitoring/adapter"
-	"github.com/elastic/beats/v7/libbeat/outputs/codec"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/cfgwarn"
+	"github.com/njcx/libbeat_v7/common/fmtstr"
+	"github.com/njcx/libbeat_v7/common/kafka"
+	"github.com/njcx/libbeat_v7/common/transport/kerberos"
+	"github.com/njcx/libbeat_v7/common/transport/tlscommon"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/monitoring"
+	"github.com/njcx/libbeat_v7/monitoring/adapter"
+	"github.com/njcx/libbeat_v7/outputs/codec"
 )
 
 type backoffConfig struct {

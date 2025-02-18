@@ -28,11 +28,11 @@ import (
 	"go.uber.org/multierr"
 	"golang.org/x/sys/windows"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/processors"
-	jsprocessor "github.com/elastic/beats/v7/libbeat/processors/script/javascript/module/processor"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/processors"
+	jsprocessor "github.com/njcx/libbeat_v7/processors/script/javascript/module/processor"
 	"github.com/elastic/beats/v7/winlogbeat/sys/winevent"
 )
 

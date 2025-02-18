@@ -23,9 +23,9 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	s "github.com/elastic/beats/v7/libbeat/common/schema"
-	c "github.com/elastic/beats/v7/libbeat/common/schema/mapstriface"
+	"github.com/njcx/libbeat_v7/common"
+	s "github.com/njcx/libbeat_v7/common/schema"
+	c "github.com/njcx/libbeat_v7/common/schema/mapstriface"
 )
 
 type KubeConfig struct {

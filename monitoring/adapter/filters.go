@@ -20,8 +20,8 @@ package adapter
 import (
 	"strings"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/monitoring"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/monitoring"
 )
 
 // provide filters for filtering and adapting a metric type

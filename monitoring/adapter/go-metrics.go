@@ -24,8 +24,8 @@ import (
 
 	metrics "github.com/rcrowley/go-metrics"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/monitoring"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/monitoring"
 )
 
 // implement adapter for adding go-metrics based counters

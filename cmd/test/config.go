@@ -23,8 +23,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/cmd/instance"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/cmd/instance"
 )
 
 func GenTestConfigCmd(settings instance.Settings, beatCreator beat.Creator) *cobra.Command {

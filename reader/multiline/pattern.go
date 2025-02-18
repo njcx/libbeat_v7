@@ -23,10 +23,10 @@ import (
 	"io"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common/match"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/reader"
-	"github.com/elastic/beats/v7/libbeat/reader/readfile"
+	"github.com/njcx/libbeat_v7/common/match"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/reader"
+	"github.com/njcx/libbeat_v7/reader/readfile"
 )
 
 // MultiLine reader combining multiple line events into one multi-line event.

@@ -18,8 +18,8 @@
 package transport
 
 import (
-	"github.com/elastic/beats/v7/libbeat/common/transport"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/njcx/libbeat_v7/common/transport"
+	"github.com/njcx/libbeat_v7/logp"
 )
 
 type ProxyConfig = transport.ProxyConfig

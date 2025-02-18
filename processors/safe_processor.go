@@ -21,9 +21,9 @@ import (
 	"errors"
 	"sync/atomic"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/logp"
 )
 
 var ErrClosed = errors.New("attempt to use a closed processor")

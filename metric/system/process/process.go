@@ -30,11 +30,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/match"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/metric/system/cgroup"
-	"github.com/elastic/beats/v7/libbeat/metric/system/numcpu"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/match"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/metric/system/cgroup"
+	"github.com/njcx/libbeat_v7/metric/system/numcpu"
 	sysinfo "github.com/elastic/go-sysinfo"
 	sigar "github.com/elastic/gosigar"
 )

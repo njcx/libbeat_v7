@@ -25,8 +25,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/metric/system/cgroup/cgv1"
-	"github.com/elastic/beats/v7/libbeat/metric/system/cgroup/cgv2"
+	"github.com/njcx/libbeat_v7/metric/system/cgroup/cgv1"
+	"github.com/njcx/libbeat_v7/metric/system/cgroup/cgv2"
 )
 
 // StatsV1 contains metrics and limits from each of the cgroup subsystems.

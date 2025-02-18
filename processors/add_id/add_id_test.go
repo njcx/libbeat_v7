@@ -20,9 +20,9 @@ package add_id
 import (
 	"testing"
 
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/njcx/libbeat_v7/common"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
+	"github.com/njcx/libbeat_v7/beat"
 
 	"github.com/stretchr/testify/assert"
 )

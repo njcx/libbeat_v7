@@ -20,7 +20,7 @@ package jsontransform
 import (
 	"encoding/json"
 
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/njcx/libbeat_v7/common"
 )
 
 // TransformNumbers walks a json decoded tree an replaces json.Number

@@ -20,11 +20,11 @@ package timeseries
 import (
 	"strings"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/cfgwarn"
-	"github.com/elastic/beats/v7/libbeat/mapping"
-	"github.com/elastic/beats/v7/libbeat/processors"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/cfgwarn"
+	"github.com/njcx/libbeat_v7/mapping"
+	"github.com/njcx/libbeat_v7/processors"
 
 	"github.com/mitchellh/hashstructure"
 )

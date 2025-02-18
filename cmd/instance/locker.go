@@ -23,7 +23,7 @@ import (
 	"github.com/gofrs/flock"
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/paths"
+	"github.com/njcx/libbeat_v7/paths"
 )
 
 var (

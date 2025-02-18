@@ -25,7 +25,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/metric/system/cgroup/cgcommon"
+	"github.com/njcx/libbeat_v7/metric/system/cgroup/cgcommon"
 )
 
 // IOSubsystem is the replacement for the bulkio controller in cgroupsV1

@@ -28,9 +28,9 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/cleanup"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/cleanup"
+	"github.com/njcx/libbeat_v7/logp"
 )
 
 // diskstore manages the on-disk state of the memlog store.

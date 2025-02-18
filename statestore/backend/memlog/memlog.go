@@ -22,8 +22,8 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/statestore/backend"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/statestore/backend"
 )
 
 // Registry configures access to memlog based stores.

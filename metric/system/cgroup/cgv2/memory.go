@@ -28,8 +28,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/metric/system/cgroup/cgcommon"
-	"github.com/elastic/beats/v7/libbeat/opt"
+	"github.com/njcx/libbeat_v7/metric/system/cgroup/cgcommon"
+	"github.com/njcx/libbeat_v7/opt"
 )
 
 // MemorySubsystem contains the metrics and limits from the "memory" subsystem.

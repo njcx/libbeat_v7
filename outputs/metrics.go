@@ -17,7 +17,7 @@
 
 package outputs
 
-import "github.com/elastic/beats/v7/libbeat/monitoring"
+import "github.com/njcx/libbeat_v7/monitoring"
 
 // Stats implements the Observer interface, for collecting metrics on common
 // outputs events.

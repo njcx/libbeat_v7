@@ -17,7 +17,7 @@
 
 package memlog
 
-import "github.com/elastic/beats/v7/libbeat/common"
+import "github.com/njcx/libbeat_v7/common"
 
 type (
 	op interface {

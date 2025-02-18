@@ -22,9 +22,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common/backoff"
-	"github.com/elastic/beats/v7/libbeat/publisher"
-	"github.com/elastic/beats/v7/libbeat/testing"
+	"github.com/njcx/libbeat_v7/common/backoff"
+	"github.com/njcx/libbeat_v7/publisher"
+	"github.com/njcx/libbeat_v7/testing"
 )
 
 type backoffClient struct {

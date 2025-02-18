@@ -22,7 +22,7 @@ import (
 
 	"github.com/IBM/sarama"
 
-	"github.com/elastic/beats/v7/libbeat/publisher"
+	"github.com/njcx/libbeat_v7/publisher"
 )
 
 type message struct {

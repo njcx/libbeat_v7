@@ -20,9 +20,9 @@ package monitoring
 import (
 	"errors"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/cfgwarn"
-	"github.com/elastic/beats/v7/libbeat/monitoring/report"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/cfgwarn"
+	"github.com/njcx/libbeat_v7/monitoring/report"
 )
 
 // BeatConfig represents the part of the $BEAT.yml to do with monitoring settings

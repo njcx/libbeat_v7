@@ -32,8 +32,8 @@ import (
 	"github.com/docker/docker/api/types/filters"
 	"github.com/docker/go-connections/tlsconfig"
 
-	"github.com/elastic/beats/v7/libbeat/common/bus"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/njcx/libbeat_v7/common/bus"
+	"github.com/njcx/libbeat_v7/logp"
 )
 
 // Select Docker API version

@@ -18,8 +18,8 @@
 package host
 
 import (
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/monitoring"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/monitoring"
 	"github.com/elastic/go-sysinfo"
 	"github.com/elastic/go-sysinfo/types"
 )

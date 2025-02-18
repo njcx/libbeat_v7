@@ -20,7 +20,7 @@ package numcpu
 import (
 	"runtime"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/njcx/libbeat_v7/logp"
 )
 
 // NumCPU is a drop-in replacement for runtime.NumCPU for accurate system config reporting.

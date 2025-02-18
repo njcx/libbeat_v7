@@ -30,11 +30,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/publisher/pipeline/stress"
-	_ "github.com/elastic/beats/v7/libbeat/publisher/queue/memqueue"
-	_ "github.com/elastic/beats/v7/libbeat/publisher/queue/spool"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/publisher/pipeline/stress"
+	_ "github.com/njcx/libbeat_v7/publisher/queue/memqueue"
+	_ "github.com/njcx/libbeat_v7/publisher/queue/spool"
 )
 
 // additional flags

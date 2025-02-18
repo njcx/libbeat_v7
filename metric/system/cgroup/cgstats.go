@@ -22,10 +22,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/transform/typeconv"
-	"github.com/elastic/beats/v7/libbeat/metric/system/numcpu"
-	"github.com/elastic/beats/v7/libbeat/opt"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/transform/typeconv"
+	"github.com/njcx/libbeat_v7/metric/system/numcpu"
+	"github.com/njcx/libbeat_v7/opt"
 )
 
 // CGStats in an interface wrapper around the V2 and V1 cgroup stat objects

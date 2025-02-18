@@ -25,8 +25,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/elastic/beats/v7/libbeat/generator/fields"
-	"github.com/elastic/beats/v7/libbeat/mapping"
+	"github.com/njcx/libbeat_v7/generator/fields"
+	"github.com/njcx/libbeat_v7/mapping"
 )
 
 func main() {

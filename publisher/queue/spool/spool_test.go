@@ -26,8 +26,8 @@ import (
 
 	humanize "github.com/dustin/go-humanize"
 
-	"github.com/elastic/beats/v7/libbeat/publisher/queue"
-	"github.com/elastic/beats/v7/libbeat/publisher/queue/queuetest"
+	"github.com/njcx/libbeat_v7/publisher/queue"
+	"github.com/njcx/libbeat_v7/publisher/queue/queuetest"
 	"github.com/elastic/go-txfile"
 	"github.com/elastic/go-txfile/txfiletest"
 )

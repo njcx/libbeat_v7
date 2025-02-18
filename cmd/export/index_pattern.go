@@ -22,9 +22,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/elastic/beats/v7/libbeat/cmd/instance"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/kibana"
+	"github.com/njcx/libbeat_v7/cmd/instance"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/kibana"
 )
 
 // GenIndexPatternConfigCmd generates an index pattern for Kibana

@@ -20,7 +20,7 @@ package ratelimit
 import (
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/njcx/libbeat_v7/common"
 )
 
 // config for rate limit processor.

@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common/transport/transptest"
+	"github.com/njcx/libbeat_v7/common/transport/transptest"
 
-	"github.com/elastic/beats/v7/libbeat/common/transport"
+	"github.com/njcx/libbeat_v7/common/transport"
 )
 
 type MockServer = transptest.MockServer

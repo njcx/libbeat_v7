@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/njcx/libbeat_v7/common/transport/tlscommon"
 )
 
 type config struct {

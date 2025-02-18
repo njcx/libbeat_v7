@@ -20,7 +20,7 @@ package transport
 import (
 	"net"
 
-	"github.com/elastic/beats/v7/libbeat/common/transport"
+	"github.com/njcx/libbeat_v7/common/transport"
 )
 
 func DialWith(

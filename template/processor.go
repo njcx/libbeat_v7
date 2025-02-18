@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/mapping"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/mapping"
 )
 
 // DefaultField controls the default value for the default_field flag.

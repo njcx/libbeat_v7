@@ -20,8 +20,8 @@ package docker
 import (
 	"strings"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/safemapstr"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/common/safemapstr"
 )
 
 // ExtractContainerName strips the `/` characters that frequently appear in container names

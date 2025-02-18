@@ -27,7 +27,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/metric/system/cgroup/cgcommon"
+	"github.com/njcx/libbeat_v7/metric/system/cgroup/cgcommon"
 )
 
 // BlockIOSubsystem contains limits and metrics from the "blkio" subsystem. The

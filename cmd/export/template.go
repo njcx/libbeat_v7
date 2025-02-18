@@ -20,9 +20,9 @@ package export
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/elastic/beats/v7/libbeat/cmd/instance"
-	"github.com/elastic/beats/v7/libbeat/idxmgmt"
-	"github.com/elastic/beats/v7/libbeat/idxmgmt/ilm"
+	"github.com/njcx/libbeat_v7/cmd/instance"
+	"github.com/njcx/libbeat_v7/idxmgmt"
+	"github.com/njcx/libbeat_v7/idxmgmt/ilm"
 )
 
 // GenTemplateConfigCmd is the command used to export the elasticsearch template.

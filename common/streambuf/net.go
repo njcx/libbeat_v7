@@ -20,7 +20,7 @@ package streambuf
 // read integers in network byte order
 
 import (
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/njcx/libbeat_v7/common"
 )
 
 // Parse 8bit binary value from Buffer.

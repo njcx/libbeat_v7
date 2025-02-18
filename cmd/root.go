@@ -25,12 +25,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/cfgfile"
-	"github.com/elastic/beats/v7/libbeat/cmd/instance"
-	"github.com/elastic/beats/v7/libbeat/cmd/platformcheck"
-	"github.com/elastic/beats/v7/libbeat/licenser"
-	"github.com/elastic/beats/v7/libbeat/outputs/elasticsearch"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/cfgfile"
+	"github.com/njcx/libbeat_v7/cmd/instance"
+	"github.com/njcx/libbeat_v7/cmd/platformcheck"
+	"github.com/njcx/libbeat_v7/licenser"
+	"github.com/njcx/libbeat_v7/outputs/elasticsearch"
 )
 
 func init() {

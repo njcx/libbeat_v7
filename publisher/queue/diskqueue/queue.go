@@ -23,10 +23,10 @@ import (
 	"os"
 	"sync"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/feature"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/publisher/queue"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/feature"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/publisher/queue"
 )
 
 // diskQueue is the internal type representing a disk-based implementation

@@ -18,7 +18,7 @@
 package spool
 
 import (
-	"github.com/elastic/beats/v7/libbeat/publisher"
+	"github.com/njcx/libbeat_v7/publisher"
 )
 
 // producer -> broker API

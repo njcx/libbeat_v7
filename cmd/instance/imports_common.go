@@ -18,27 +18,27 @@
 package instance
 
 import (
-	_ "github.com/elastic/beats/v7/libbeat/autodiscover/appenders/config" // Register autodiscover appenders
-	_ "github.com/elastic/beats/v7/libbeat/autodiscover/providers/jolokia"
-	_ "github.com/elastic/beats/v7/libbeat/monitoring/report/elasticsearch" // Register default monitoring reporting
-	_ "github.com/elastic/beats/v7/libbeat/processors/actions"              // Register default processors.
-	_ "github.com/elastic/beats/v7/libbeat/processors/add_cloud_metadata"
-	_ "github.com/elastic/beats/v7/libbeat/processors/add_host_metadata"
-	_ "github.com/elastic/beats/v7/libbeat/processors/add_id"
-	_ "github.com/elastic/beats/v7/libbeat/processors/add_locale"
-	_ "github.com/elastic/beats/v7/libbeat/processors/add_observer_metadata"
-	_ "github.com/elastic/beats/v7/libbeat/processors/add_process_metadata"
-	_ "github.com/elastic/beats/v7/libbeat/processors/communityid"
-	_ "github.com/elastic/beats/v7/libbeat/processors/convert"
-	_ "github.com/elastic/beats/v7/libbeat/processors/decode_xml"
-	_ "github.com/elastic/beats/v7/libbeat/processors/decode_xml_wineventlog"
-	_ "github.com/elastic/beats/v7/libbeat/processors/dissect"
-	_ "github.com/elastic/beats/v7/libbeat/processors/dns"
-	_ "github.com/elastic/beats/v7/libbeat/processors/extract_array"
-	_ "github.com/elastic/beats/v7/libbeat/processors/fingerprint"
-	_ "github.com/elastic/beats/v7/libbeat/processors/ratelimit"
-	_ "github.com/elastic/beats/v7/libbeat/processors/registered_domain"
-	_ "github.com/elastic/beats/v7/libbeat/processors/translate_sid"
-	_ "github.com/elastic/beats/v7/libbeat/processors/urldecode"
-	_ "github.com/elastic/beats/v7/libbeat/publisher/includes" // Register publisher pipeline modules
+	_ "github.com/njcx/libbeat_v7/autodiscover/appenders/config" // Register autodiscover appenders
+	_ "github.com/njcx/libbeat_v7/autodiscover/providers/jolokia"
+	_ "github.com/njcx/libbeat_v7/monitoring/report/elasticsearch" // Register default monitoring reporting
+	_ "github.com/njcx/libbeat_v7/processors/actions"              // Register default processors.
+	_ "github.com/njcx/libbeat_v7/processors/add_cloud_metadata"
+	_ "github.com/njcx/libbeat_v7/processors/add_host_metadata"
+	_ "github.com/njcx/libbeat_v7/processors/add_id"
+	_ "github.com/njcx/libbeat_v7/processors/add_locale"
+	_ "github.com/njcx/libbeat_v7/processors/add_observer_metadata"
+	_ "github.com/njcx/libbeat_v7/processors/add_process_metadata"
+	_ "github.com/njcx/libbeat_v7/processors/communityid"
+	_ "github.com/njcx/libbeat_v7/processors/convert"
+	_ "github.com/njcx/libbeat_v7/processors/decode_xml"
+	_ "github.com/njcx/libbeat_v7/processors/decode_xml_wineventlog"
+	_ "github.com/njcx/libbeat_v7/processors/dissect"
+	_ "github.com/njcx/libbeat_v7/processors/dns"
+	_ "github.com/njcx/libbeat_v7/processors/extract_array"
+	_ "github.com/njcx/libbeat_v7/processors/fingerprint"
+	_ "github.com/njcx/libbeat_v7/processors/ratelimit"
+	_ "github.com/njcx/libbeat_v7/processors/registered_domain"
+	_ "github.com/njcx/libbeat_v7/processors/translate_sid"
+	_ "github.com/njcx/libbeat_v7/processors/urldecode"
+	_ "github.com/njcx/libbeat_v7/publisher/includes" // Register publisher pipeline modules
 )

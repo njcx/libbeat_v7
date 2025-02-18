@@ -25,13 +25,13 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/metric/system/cgroup"
-	"github.com/elastic/beats/v7/libbeat/metric/system/cpu"
-	"github.com/elastic/beats/v7/libbeat/metric/system/numcpu"
-	"github.com/elastic/beats/v7/libbeat/metric/system/process"
-	"github.com/elastic/beats/v7/libbeat/monitoring"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/logp"
+	"github.com/njcx/libbeat_v7/metric/system/cgroup"
+	"github.com/njcx/libbeat_v7/metric/system/cpu"
+	"github.com/njcx/libbeat_v7/metric/system/numcpu"
+	"github.com/njcx/libbeat_v7/metric/system/process"
+	"github.com/njcx/libbeat_v7/monitoring"
 )
 
 var (

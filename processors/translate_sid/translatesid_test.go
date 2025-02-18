@@ -29,7 +29,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sys/windows"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
+	"github.com/njcx/libbeat_v7/beat"
 	"github.com/elastic/beats/v7/winlogbeat/sys/winevent"
 )
 

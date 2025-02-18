@@ -20,9 +20,9 @@ package add_data_stream
 import (
 	"fmt"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/beat/events"
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/njcx/libbeat_v7/beat"
+	"github.com/njcx/libbeat_v7/beat/events"
+	"github.com/njcx/libbeat_v7/common"
 )
 
 const FieldMetaCustomDataset = "dataset"

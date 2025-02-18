@@ -24,8 +24,8 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/mapping"
+	"github.com/njcx/libbeat_v7/common"
+	"github.com/njcx/libbeat_v7/mapping"
 )
 
 type IndexPatternGenerator struct {
