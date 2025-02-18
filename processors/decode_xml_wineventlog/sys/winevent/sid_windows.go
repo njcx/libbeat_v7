@@ -15,28 +15,29 @@
 // specific language governing permissions and limitations
 // under the License.
 
-//go:build !windows
-// +build !windows
+package winevent
 
-package decode_xml_wineventlog
+import "golang.org/x/sys/windows"
 
-import (
-	"github.com/njcx/libbeat_v7/common"
-	"github.com/njcx/libbeat_v7/processors/decode_xml_wineventlog/sys/winevent"
-)
-
-type nonWinDecoder struct{}
-
-func newDecoder() decoder {
-	return nonWinDecoder{}
-}
-
-func (nonWinDecoder) decode(data []byte) (common.MapStr, common.MapStr, error) {
-	evt, err := winevent.UnmarshalXML(data)
-	if err != nil {
-		return nil, nil, err
+// PopulateAccount lookups the account name and type associated with a SID.
+// The account name, domain, and type are added to the given sid.
+func PopulateAccount(sid *SID) error {
+	if sid == nil || sid.Identifier == "" {
+		return nil
 	}
-	winevent.EnrichRawValuesWithNames(nil, &evt)
-	win, ecs := fields(evt)
-	return win, ecs, nil
+
+	s, err := windows.StringToSid(sid.Identifier)
+	if err != nil {
+		return err
+	}
+
+	account, domain, accType, err := s.LookupAccount("")
+	if err != nil {
+		return err
+	}
+
+	sid.Name = account
+	sid.Domain = domain
+	sid.Type = SIDType(accType)
+	return nil
 }

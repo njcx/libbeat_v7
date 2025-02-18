@@ -29,8 +29,8 @@ import (
 	"github.com/njcx/libbeat_v7/logp"
 	"github.com/njcx/libbeat_v7/processors"
 	"github.com/njcx/libbeat_v7/processors/checks"
+	"github.com/njcx/libbeat_v7/processors/decode_xml_wineventlog/sys/winevent"
 	jsprocessor "github.com/njcx/libbeat_v7/processors/script/javascript/module/processor"
-	"github.com/elastic/beats/v7/winlogbeat/sys/winevent"
 )
 
 var (

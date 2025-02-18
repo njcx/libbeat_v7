@@ -15,28 +15,9 @@
 // specific language governing permissions and limitations
 // under the License.
 
-//go:build !windows
-// +build !windows
-
-package decode_xml_wineventlog
-
-import (
-	"github.com/njcx/libbeat_v7/common"
-	"github.com/njcx/libbeat_v7/processors/decode_xml_wineventlog/sys/winevent"
-)
-
-type nonWinDecoder struct{}
-
-func newDecoder() decoder {
-	return nonWinDecoder{}
-}
-
-func (nonWinDecoder) decode(data []byte) (common.MapStr, common.MapStr, error) {
-	evt, err := winevent.UnmarshalXML(data)
-	if err != nil {
-		return nil, nil, err
-	}
-	winevent.EnrichRawValuesWithNames(nil, &evt)
-	win, ecs := fields(evt)
-	return win, ecs, nil
-}
+/*
+Package sys provides common data structures and utilities functions that are
+used by the subpackages for interfacing with the system level APIs to collect
+event log records from Windows.
+*/
+package sys

@@ -15,28 +15,34 @@
 // specific language governing permissions and limitations
 // under the License.
 
-//go:build !windows
-// +build !windows
-
-package decode_xml_wineventlog
+package sys
 
 import (
-	"github.com/njcx/libbeat_v7/common"
-	"github.com/njcx/libbeat_v7/processors/decode_xml_wineventlog/sys/winevent"
+	"sync"
 )
 
-type nonWinDecoder struct{}
-
-func newDecoder() decoder {
-	return nonWinDecoder{}
+// bufferPool contains a pool of PooledByteBuffer objects.
+var bufferPool = sync.Pool{
+	New: func() interface{} { return &PooledByteBuffer{ByteBuffer: NewByteBuffer(1024)} },
 }
 
-func (nonWinDecoder) decode(data []byte) (common.MapStr, common.MapStr, error) {
-	evt, err := winevent.UnmarshalXML(data)
-	if err != nil {
-		return nil, nil, err
+// PooledByteBuffer is an expandable buffer backed by a byte slice.
+type PooledByteBuffer struct {
+	*ByteBuffer
+}
+
+// NewPooledByteBuffer return a PooledByteBuffer from the pool. The returned value must
+// be released with Free().
+func NewPooledByteBuffer() *PooledByteBuffer {
+	b := bufferPool.Get().(*PooledByteBuffer)
+	b.Reset()
+	return b
+}
+
+// Free returns the PooledByteBuffer to the pool.
+func (b *PooledByteBuffer) Free() {
+	if b == nil {
+		return
 	}
-	winevent.EnrichRawValuesWithNames(nil, &evt)
-	win, ecs := fields(evt)
-	return win, ecs, nil
+	bufferPool.Put(b)
 }

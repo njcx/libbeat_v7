@@ -25,8 +25,8 @@ import (
 
 	"github.com/njcx/libbeat_v7/common"
 	"github.com/njcx/libbeat_v7/logp"
-	"github.com/elastic/beats/v7/winlogbeat/sys/winevent"
-	"github.com/elastic/beats/v7/winlogbeat/sys/wineventlog"
+	"github.com/njcx/libbeat_v7/processors/decode_xml_wineventlog/sys/winevent"
+	"github.com/njcx/libbeat_v7/processors/decode_xml_wineventlog/sys/wineventlog"
 )
 
 type winDecoder struct {

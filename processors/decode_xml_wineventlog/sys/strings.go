@@ -15,28 +15,32 @@
 // specific language governing permissions and limitations
 // under the License.
 
-//go:build !windows
-// +build !windows
-
-package decode_xml_wineventlog
+package sys
 
 import (
+	"strings"
+
 	"github.com/njcx/libbeat_v7/common"
-	"github.com/njcx/libbeat_v7/processors/decode_xml_wineventlog/sys/winevent"
 )
 
-type nonWinDecoder struct{}
+// UTF16BytesToString converts the given UTF-16 bytes to a string.
+func UTF16BytesToString(b []byte) (string, error) {
+	// Use space from the ByteBuffer pool as working memory for the conversion.
+	bb := NewPooledByteBuffer()
+	defer bb.Free()
 
-func newDecoder() decoder {
-	return nonWinDecoder{}
+	if err := common.UTF16ToUTF8Bytes(b, bb); err != nil {
+		return "", err
+	}
+
+	// This copies the UTF-8 bytes to create a string.
+	return string(bb.Bytes()), nil
 }
 
-func (nonWinDecoder) decode(data []byte) (common.MapStr, common.MapStr, error) {
-	evt, err := winevent.UnmarshalXML(data)
-	if err != nil {
-		return nil, nil, err
-	}
-	winevent.EnrichRawValuesWithNames(nil, &evt)
-	win, ecs := fields(evt)
-	return win, ecs, nil
+// RemoveWindowsLineEndings replaces carriage return line feed (CRLF) with
+// line feed (LF) and trims any newline character that may exist at the end
+// of the string.
+func RemoveWindowsLineEndings(s string) string {
+	s = strings.Replace(s, "\r\n", "\n", -1)
+	return strings.TrimRight(s, "\n")
 }

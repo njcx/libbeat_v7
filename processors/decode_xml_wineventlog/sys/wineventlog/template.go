@@ -15,28 +15,22 @@
 // specific language governing permissions and limitations
 // under the License.
 
-//go:build !windows
-// +build !windows
-
-package decode_xml_wineventlog
+package wineventlog
 
 import (
-	"github.com/njcx/libbeat_v7/common"
-	"github.com/njcx/libbeat_v7/processors/decode_xml_wineventlog/sys/winevent"
+	"encoding/xml"
 )
 
-type nonWinDecoder struct{}
-
-func newDecoder() decoder {
-	return nonWinDecoder{}
+type eventTemplate struct {
+	Data []EventData `xml:"data"`
 }
 
-func (nonWinDecoder) decode(data []byte) (common.MapStr, common.MapStr, error) {
-	evt, err := winevent.UnmarshalXML(data)
-	if err != nil {
-		return nil, nil, err
-	}
-	winevent.EnrichRawValuesWithNames(nil, &evt)
-	win, ecs := fields(evt)
-	return win, ecs, nil
+type EventData struct {
+	Name    string `xml:"name,attr"`
+	InType  string `xml:"inType,attr"`
+	OutType string `xml:"outType,attr"`
+}
+
+func (t *eventTemplate) Unmarshal(xmlData []byte) error {
+	return xml.Unmarshal(xmlData, t)
 }

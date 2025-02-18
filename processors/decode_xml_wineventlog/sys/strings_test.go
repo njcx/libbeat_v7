@@ -15,28 +15,45 @@
 // specific language governing permissions and limitations
 // under the License.
 
-//go:build !windows
-// +build !windows
-
-package decode_xml_wineventlog
+package sys
 
 import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+
 	"github.com/njcx/libbeat_v7/common"
-	"github.com/njcx/libbeat_v7/processors/decode_xml_wineventlog/sys/winevent"
 )
 
-type nonWinDecoder struct{}
+func TestUTF16BytesToString(t *testing.T) {
+	input := "abc白鵬翔\u145A6"
+	utf16Bytes := common.StringToUTF16Bytes(input)
 
-func newDecoder() decoder {
-	return nonWinDecoder{}
+	output, err := UTF16BytesToString(utf16Bytes)
+	if err != nil {
+		t.Fatal(err)
+	}
+	assert.Equal(t, input, output)
 }
 
-func (nonWinDecoder) decode(data []byte) (common.MapStr, common.MapStr, error) {
-	evt, err := winevent.UnmarshalXML(data)
-	if err != nil {
-		return nil, nil, err
-	}
-	winevent.EnrichRawValuesWithNames(nil, &evt)
-	win, ecs := fields(evt)
-	return win, ecs, nil
+func BenchmarkUTF16BytesToString(b *testing.B) {
+	utf16Bytes := common.StringToUTF16Bytes("A logon was attempted using explicit credentials.")
+
+	b.Run("simple_string", func(b *testing.B) {
+		b.ResetTimer()
+
+		for i := 0; i < b.N; i++ {
+			UTF16BytesToString(utf16Bytes)
+		}
+	})
+
+	// Buffer larger than the string.
+	b.Run("larger_buffer", func(b *testing.B) {
+		utf16Bytes = append(utf16Bytes, make([]byte, 2048)...)
+		b.ResetTimer()
+
+		for i := 0; i < b.N; i++ {
+			UTF16BytesToString(utf16Bytes)
+		}
+	})
 }
